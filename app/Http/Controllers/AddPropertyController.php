@@ -100,9 +100,11 @@ class AddPropertyController extends Controller
 
         // storing vertical image
         $fileName = time().'_'.$request->verticalImage->getClientOriginalName();
-        $path = $request->verticalImage->storeAs(
-          '/property_images/vertical_images', $fileName, 'images'
-        );
+        // $path = $request->verticalImage->storeAs(
+        //   '/property_images/vertical_images', $fileName, 'images'
+        // );
+
+        $request->verticalImage->storeAs('public/images/property_images/vertical_images', $fileName);
 
         $propertyData["vertical_image"] = $fileName;
 
@@ -121,9 +123,10 @@ class AddPropertyController extends Controller
         foreach ($request->horizontalImages as $image) {
           // store image
           $fileName = time().'_'.$image->getClientOriginalName();
-          $path = $image->storeAs(
-            '/property_images/horizontal_images', $fileName, 'images'
-          );
+        //   $path = $image->storeAs(
+        //     '/property_images/horizontal_images', $fileName, 'images'
+        //   );
+          $request->verticalImage->storeAs('public/images/property_images/horizontal_images', $fileName);
 
           // store filename in database
           $this->horizontalImageRepository->create([

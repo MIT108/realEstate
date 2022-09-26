@@ -6,7 +6,7 @@
       <div class="col-md-4">
         <div class="card-box-d">
           <div class="card-img-d">
-            <img src="{{ asset('images/agent_images').'/'.$agent->image }}" alt="" class="img-d img-fluid">
+            <img src="{{ (env('APP_URL').'/storage/images/agent_images').'/'.$agent->image }}" alt="" class="img-d img-fluid">
           </div>
           <div class="card-overlay card-overlay-hover">
             <div class="card-header-d">

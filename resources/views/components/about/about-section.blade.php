@@ -5,7 +5,7 @@
       @if($about && $about->horizontal_image)
       <div class="col-sm-12">
         <div class="about-img-box">
-          <img src="{{ asset('images/about_images/horizontal/'.$about->horizontal_image) }}" alt="" class="img-fluid">
+          <img src="{{ (env('APP_URL').'/storage/images/about_images/horizontal/'.$about->horizontal_image) }}" alt="" class="img-fluid">
         </div>
         <div class="sinse-box">
           <h3 class="sinse-title">EstateAgency
@@ -19,7 +19,7 @@
         <div class="row">
           @if($about && $about->vertical_image)
           <div class="col-md-6 col-lg-5">
-            <img src="{{ asset('images/about_images/vertical/'.$about->vertical_image) }}" alt="" class="img-fluid">
+            <img src="{{ (env('APP_URL').'/storage/images/about_images/vertical/'.$about->vertical_image) }}" alt="" class="img-fluid">
           </div>
           @endif
           <div class="col-lg-2  d-none d-lg-block">

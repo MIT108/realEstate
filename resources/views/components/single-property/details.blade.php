@@ -6,7 +6,7 @@
         <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
           @foreach($property->images as $image)
             <div class="carousel-item-b">
-              <img src="{{ asset('images/property_images/horizontal_images/'.$image->filename) }}" alt="">
+              <img src="{{ (env('APP_URL').'/storage/images/property_images/horizontal_images/'.$image->filename) }}" alt="">
             </div>
           @endforeach
         </div>
@@ -114,7 +114,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4">
-            <img src="{{ asset('images/agent_images/'.$property->agent->image) }}" alt="" class="img-fluid">
+            <img src="{{ (env('APP_URL').'/storage/images/agent_images/'.$property->agent->image) }}" alt="" class="img-fluid">
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="property-agent">

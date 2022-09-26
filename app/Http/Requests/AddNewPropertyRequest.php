@@ -85,9 +85,11 @@ class AddNewPropertyRequest extends FormRequest
           ];
         }
 
-        $arrayForValidation['verticalImage'] = ['required', 'image', new Vertical];
+        // $arrayForValidation['verticalImage'] = ['required', 'image', new Vertical];
+        $arrayForValidation['verticalImage'] = ['required', 'image'];
         $arrayForValidation['horizontalImages'] = ['required', 'array'];
-        $arrayForValidation['horizontalImages.*'] = ['image', new Horizontal];
+        // $arrayForValidation['horizontalImages.*'] = ['image', new Horizontal];
+        $arrayForValidation['horizontalImages.*'] = ['image'];
 
         return $arrayForValidation;
     }

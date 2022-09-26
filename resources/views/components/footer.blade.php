@@ -2,7 +2,7 @@
 <section class="section-footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-4">
+      <div class="col-sm-12 col-md-6">
         <div class="widget-a">
           <div class="w-header-a">
             <h3 class="w-title-a text-brand">EstateAgency</h3>
@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 section-md-t3">
+      <div class="col-sm-12 col-md-6 section-md-t3">
         <div class="widget-a">
           <div class="w-header-a">
             <h3 class="w-title-a text-brand">{{ __('The Company') }}</h3>
@@ -47,23 +47,6 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 section-md-t3">
-        <div class="widget-a">
-          <div class="w-header-a">
-            <h3 class="w-title-a text-brand">{{ __('Site Languages') }}</h3>
-          </div>
-          <div class="w-body-a">
-            <ul class="list-unstyled">
-              @foreach($languages as $language)
-              <li class="item-list-a">
-                <i class="fa fa-angle-right"></i> <a href="/{{ $language->iso }}">
-                  {{ strtoupper($language->iso) }}</a>
-              </li>
-              @endforeach
-            </ul>
           </div>
         </div>
       </div>

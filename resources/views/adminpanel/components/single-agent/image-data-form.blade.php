@@ -6,7 +6,7 @@
 
 <div class="row">
   <div class="col-12 col-md-6">
-    <img src="{{ asset('images/agent_images/'.$agent->image) }}" class="img-fluid" alt="">
+    <img src="{{ (env('APP_URL').'/storage/images/agent_images/'.$agent->image) }}" class="img-fluid" alt="">
   </div>
 </div>
 

@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="form-group row">
-        <label class="col-12 col-sm-3 col-form-label text-sm-right">{{ __('Price') }} (USD)</label>
+        <label class="col-12 col-sm-3 col-form-label text-sm-right">{{ __('Price') }} (FCFA)</label>
         <div class="col-12 col-sm-8 col-lg-6">
             <input value="" name="price" type="number" placeholder="Number" class="form-control">
         </div>
@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="form-group row">
-        <label class="col-12 col-sm-3 col-form-label text-sm-right">{{ __('Rent') }} (USD)</label>
+        <label class="col-12 col-sm-3 col-form-label text-sm-right">{{ __('Rent') }} (FCFA)</label>
         <div class="col-12 col-sm-8 col-lg-6">
             <input value="" name="rent" type="number" placeholder="Number" class="form-control">
         </div>

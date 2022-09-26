@@ -35,7 +35,7 @@
     @if($about->count())
     <div class="row mt-4">
       <div class="col-12 col-md-6">
-        <img src="{{ asset('images/about_images/horizontal/'.$about[0]->horizontal_image) }}" class="img-fluid" alt="">
+        <img src="{{ (env('APP_URL').'/storage/images/about_images/horizontal/'.$about[0]->horizontal_image) }}" class="img-fluid" alt="">
       </div>
     </div>
     @endif
@@ -48,7 +48,7 @@
     @if($about->count())
     <div class="row mt-4">
       <div class="col-12 col-md-6">
-        <img src="{{ asset('images/about_images/vertical/'.$about[0]->vertical_image) }}" class="img-fluid" alt="">
+        <img src="{{ (env('APP_URL').'/storage/images/about_images/vertical/'.$about[0]->vertical_image) }}" class="img-fluid" alt="">
       </div>
     </div>
     @endif

@@ -34,7 +34,7 @@
       <div class="col-md-4">
         <div class="card-box-a card-shadow">
           <div class="img-box-a">
-            <img src="{{ asset('images/property_images/vertical_images/'.$property->vertical_image) }}" alt="" class="img-a img-fluid">
+            <img src="{{ (env('APP_URL').'/storage/images/property_images/vertical_images/'.$property->vertical_image) }}" alt="" class="img-a img-fluid">
           </div>
           <div class="card-overlay">
             <div class="card-overlay-a-content">
@@ -47,7 +47,7 @@
               </div>
               <div class="card-body-a">
                 <div class="price-box d-flex">
-                  <span class="price-a">rent | $ {{ $property->rent }}</span>
+                  <span class="price-a">rent | {{ $property->rent }} FCFA</span>
                 </div>
                 <a href="/{{ app()->getLocale() }}/property/{{ $property->id }}" class="link-a">
                   {{ __('Click here to view') }}

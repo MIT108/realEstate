@@ -17,7 +17,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-6">
               <div class="testimonial-img">
-                <img src="{{ asset('images/testemonial_images/'.$testemonial->image_filename) }}" alt="" class="img-fluid">
+                <img src="{{ (env('APP_URL').'/storage/images/testemonial_images/'.$testemonial->image_filename) }}" alt="" class="img-fluid">
               </div>
             </div>
             <div class="col-sm-12 col-md-6">
@@ -30,7 +30,7 @@
                 </p>
               </div>
               <div class="testimonial-author-box">
-                <img src="{{ asset('images/testemonial_images/mini/'.$testemonial->mini_image_filename) }}" alt="" class="testimonial-avatar">
+                <img src="{{ (env('APP_URL').'/storage/images/testemonial_images/mini/'.$testemonial->mini_image_filename) }}" alt="" class="testimonial-avatar">
                 <h5 class="testimonial-author">{{ $testemonial->names }}</h5>
               </div>
             </div>

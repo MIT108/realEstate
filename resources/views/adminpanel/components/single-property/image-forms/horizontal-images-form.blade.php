@@ -7,7 +7,7 @@
 @foreach($property->images as $image)
 <div class="row mt-4">
   <div class="col-12 col-md-7">
-    <img src="{{ asset('images/property_images/horizontal_images/'.$image->filename) }}" alt="" class="img-fluid">
+    <img src="{{ (env('APP_URL').'/storage/images/property_images/horizontal_images/'.$image->filename) }}" alt="" class="img-fluid">
   </div>
 </div>
 <div class="row mt-2">

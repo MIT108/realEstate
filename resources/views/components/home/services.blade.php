@@ -14,9 +14,9 @@
       <div class="col-md-4">
         <div class="card-box-c foo">
           <div class="card-header-c d-flex">
-            <div class="card-box-ico">
+            {{-- <div class="card-box-ico">
               <span class="fa fa-user"></span>
-            </div>
+            </div> --}}
             <div class="card-title-c align-self-center">
               <h2 class="title-c">{{ __('Tenants') }}</h2>
             </div>
@@ -31,9 +31,9 @@
       <div class="col-md-4">
         <div class="card-box-c foo">
           <div class="card-header-c d-flex">
-            <div class="card-box-ico">
+            {{-- <div class="card-box-ico">
               <span class="fa fa-usd"></span>
-            </div>
+            </div> --}}
             <div class="card-title-c align-self-center">
               <h2 class="title-c">{{ __('Rentals') }}</h2>
             </div>
@@ -48,9 +48,9 @@
       <div class="col-md-4">
         <div class="card-box-c foo">
           <div class="card-header-c d-flex">
-            <div class="card-box-ico">
+            {{-- <div class="card-box-ico">
               <span class="fa fa-home"></span>
-            </div>
+            </div> --}}
             <div class="card-title-c align-self-center">
               <h2 class="title-c">{{ __('Sell') }}</h2>
             </div>

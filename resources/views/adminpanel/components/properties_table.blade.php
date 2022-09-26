@@ -22,8 +22,8 @@
                                 <td>{{ $property->city }}</td>
                                 <td>{{ $property->status->status }}</td>
                                 <td>{{ $property->type->name }}</td>
-                                <td>${{ $property->price }}</td>
-                                <td>${{ $property->rent }}</td>
+                                <td>{{ $property->price }}FCFA</td>
+                                <td>{{ $property->rent }}FCFA</td>
                                 <td>
                                   <a href="/home/property/{{ $property->id }}">
                                     {{ __('Edit') }} <i class="pl-2 fas fa-edit"></i>

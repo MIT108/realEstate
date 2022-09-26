@@ -7,7 +7,7 @@
 <!-- Big image form -->
 <div class="row">
   <div class="col-12 col-md-6">
-    <img src="{{ asset('images/testemonial_images/'.$testemonial->image_filename) }}" class="img-fluid" alt="">
+    <img src="{{ (env('APP_URL').'/storage/images/testemonial_images/'.$testemonial->image_filename) }}" class="img-fluid" alt="">
   </div>
 </div>
 
@@ -48,7 +48,7 @@
 
 <div class="row">
   <div class="col-12 col-md-6">
-    <img src="{{ asset('images/testemonial_images/mini/'.$testemonial->mini_image_filename) }}" class="img-fluid" alt="">
+    <img src="{{ (env('APP_URL').'/storage/images/testemonial_images/mini/'.$testemonial->mini_image_filename) }}" class="img-fluid" alt="">
   </div>
 </div>
 
